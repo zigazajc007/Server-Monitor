@@ -1,8 +1,9 @@
 {
     "check_interval" : 10,
 
+    "notify_after" : 1800,
+
     "devices": [
-        { "name":"Internet", "host":"1.1.1.1" },
         { "name":"ZigaPC", "host":"192.168.2.200" },
         { "name":"Ubuntu1", "host":"192.168.2.201" },
         { "name":"Ubuntu2", "host":"192.168.2.202" },
@@ -13,14 +14,20 @@
     "email": {
         "service": "gmail",
         "auth": {
-            "user": "yourEmailHere",
-            "pass": "YouPasswordHere"
+            "user": "YourEmailHere",
+            "pass": "YourPasswordHere"
         },
         "options": {
-            "from": "yourEmailHere",
-            "to": "yourEmailHere",
-            "subject": "{name} ({host}) is down!",
-            "text": "{name} ({host}) is down please take a look."
+            "from": "YourEmailHere",
+            "to": "YourEmailHere",
+            "up": {
+                "subject": "{name} ({host}) is back up!",
+                "text": "<div style='background-color: #1b9b24; text-align: center; margin: 1em; padding: 5em; border-radius: 1em;'><h1 style='color: orange; font-size: 3em;'>Server Monitor</h1><p style='color: black; font-size: 1.5em'>{name} ({host}) is back up!</p></div>"
+            },
+            "down": {
+                "subject": "{name} ({host}) is down!",
+                "text": "<div style='background-color: #f43a3a; text-align: center; margin: 1em; padding: 5em; border-radius: 1em;'><h1 style='color: orange; font-size: 3em;'>Server Monitor</h1><p style='color: black; font-size: 1.5em'>{name} ({host}) is down! Please take a look.</p></div>"
+            }
         }
     }
 }
