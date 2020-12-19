@@ -1,0 +1,21 @@
+{
+  "name": "server-monitor",
+  "version": "1.0.0",
+  "description": "Fastest and simplest server monitor",
+  "main": "start.js",
+  "dependencies": {
+    "nodemailer": "^6.4.17",
+    "ping": "^0.3.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziga.zajc007/Server-Monitor.git"
+  },
+  "author": "ziga.zajc007",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ziga.zajc007/Server-Monitor/issues"
+  },
+  "homepage": "https://github.com/ziga.zajc007/Server-Monitor#readme"
+}

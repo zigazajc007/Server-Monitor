@@ -1,0 +1,26 @@
+{
+    "check_interval" : 10,
+
+    "devices": [
+        { "name":"Internet", "host":"1.1.1.1" },
+        { "name":"ZigaPC", "host":"192.168.2.200" },
+        { "name":"Ubuntu1", "host":"192.168.2.201" },
+        { "name":"Ubuntu2", "host":"192.168.2.202" },
+        { "name":"Ubuntu3", "host":"192.168.2.203" },
+        { "name":"Ubuntu4", "host":"192.168.2.204" }
+    ],
+
+    "email": {
+        "service": "gmail",
+        "auth": {
+            "user": "yourEmailHere",
+            "pass": "YouPasswordHere"
+        },
+        "options": {
+            "from": "yourEmailHere",
+            "to": "yourEmailHere",
+            "subject": "{name} ({host}) is down!",
+            "text": "{name} ({host}) is down please take a look."
+        }
+    }
+}
