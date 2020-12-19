@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  server-monitor:
+    image: zigazajc007/server-monitor
+    container_name: server-monitor
+    restart: unless-stopped
