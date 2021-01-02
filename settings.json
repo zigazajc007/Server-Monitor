@@ -1,5 +1,5 @@
 {
-    "check_interval" : 10,
+    "check_interval" : 300,
 
     "notify_after" : 1800,
 
